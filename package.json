@@ -30,7 +30,8 @@
   "lint-staged": {
     "src/**/*.js": [
       "prettier --single-quote --arrow-parens always --write",
-      "eslint --fix"
+      "eslint --fix",
+      "git add"
     ],
     "*.{json,css,md}": [
       "prettier --write",
