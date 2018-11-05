@@ -28,7 +28,11 @@
     }
   },
   "lint-staged": {
-    "*.{js,json,css,md}": [
+    "src/**/*.js": [
+      "prettier --single-quote --arrow-parens always --write",
+      "eslint --fix"
+    ],
+    "*.{json,css,md}": [
       "prettier --write",
       "git add"
     ]
